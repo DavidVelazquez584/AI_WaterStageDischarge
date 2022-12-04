@@ -1,0 +1,22 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Metodologías}
+
+Los modelos generados fueron para estimar el nivel y flujo del agua, esperando predecir estas variables en casos futuros sin necesidad de las variables específicas del ambiente, solo enfocándonos en la captura de imágenes para una predicción certera. Con este aclarado podemos decir que los datos con los que tratamos fueron obtenidos por nuestros colaboradores de la universidad de Nebraska, donde se encargaron de procesar las imágenes para obtener los datos con los que se trabajarán.
+
+El primer paso fue recrear los resultados obtenidos por el equipo de Nebraska. Estos se replicaron utilizando los datos que obtuvieron mediante el procesamiento de imágenes y aplicando los modelos seleccionados, la selección de estos modelos será explicada en la siguiente sección. El motivo de este paso fue para comenzar en el mismo punto en el que se concluyó el trabajo pasado, verificando que los datos sean correctos y la situación se pudo replicar exitosamente.
+Al replicar los resultados se optó por implementar modelos similares de regresión, debido a que el objetivo de estos modelos se enfoca en la predicción de variables, la selección de los modelos será especificada y justificada en la siguiente sección, en este caso el nivel del agua y su flujo. Nuestro enfoque fue encontrar modelos que nos brindaran resultados distintos a los ya obtenidos, buscando variación en los resultados utilizando la precisión como métrica, estos son vistos con mayor detalle en la sección de modelos.
+
+Una alternativa que se buscó fue la especialización de los modelos a temporadas, dividiendo los datos en verano, otoño, invierno y primavera según las fechas que tienen los datos con los que contamos. Gracias a esto se creó un modelo para cada temporada por su cambio tan drástico en el río entre cada una de las estaciones, al mismo tiempo interpretaremos las imágenes fijando el área de donde se enfoca la información obtenida de la base de datos mediante el software de procesamiento de imágenes creado por nuestros compañeros de Nebraska. Este modelo se preparó no generando nuevos datos sino analizando la imagen para relacionarlo con los valores de los sensores, de esta forma utilizaremos otra fuente de datos nueva, no la información interpretada sino la imagen en sí. Por último se optó por probar una serie de tiempo para la predicción de datos faltantes, por la naturaleza de los datos la cuales cuentan con tiempos específicos.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=1\textwidth]{Fig2}
+\caption{División de variables en los dos casos de modelos utilizados}
+\end{figure}
+
+Debido a las circunstancias distintas de nuestros puntos a seguir, los casos de prueba se organizaron de la siguiente manera (Figure 2), para los modelos de regresión en donde se reutilizaron los datos generados por el equipo de Nebraska, se dividió el 70% para el entrenamiento y el 30% para prueba. En el caso donde se utilizaron modelos convolucionales se dividieron en 3 partes ya que no solo ocupamos para testing y training sino también un tercero que sería destinado a validación. En el segundo caso la división fue de 60, 20, 20, esto es 60% para el entrenamiento, el otro 20% destinado  para pruebas y el último 20% para validación.
+
+\end{document}
+\clearpage

@@ -1,0 +1,22 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Descripción de datos}
+
+Los datos utilizados son una base de datos obtenida mediante el procesamiento de miles de fotografías tomadas durante intervalos de 1 hora, posicionadas desde el mismo punto fijado en una presa con leves movimientos entre 4º en rotación y 0.25º en traslación. Esto causando un ligero ruido al intentar tomar medidas de las imágenes debido a que fueron tomadas para un documental del área. A su vez se cuenta con medidas de sensores que nos ayudan a medir el nivel de agua y su flujo en intervalos de 15 minutos, contando con datos recopilados desde 2012 a 2019 de ambas fuentes. Estos datos fueron obtenidos del sitio North Platte River State Line Weir localizado entre Wyoming y Nebraska, siendo altamente afectado por el derretimiento de nieve en las cabezas de las montañas, seleccionado por su gran número de imágenes(57,544), la alta resolución que estas poseen(4288x2848 RGB) y su proximidad a la sección de control de rio de la USGS (estación USGS 06674500 NPRSLW, 2020) de donde se obtuvieron los datos de los sensores (State Line Gauge Weir | PBT, 2022). La comparación funciona con calcular la presa que se encuentra en las fotografías (Figure 1), identificando el área por encima de la presa, el área de la espuma blanca que causa el agua al caer y así obtener características que se pueden comparar con los valores de los sensores. A su vez midiendo el área del agua a comparación de la orilla para compararlo con el nivel del agua.
+
+Lo primero que podemos observar es que las muestras clasificadas como agresivas poseen más muestras con valores extremos o irregulares, aunque no pertenecen únicamente a este grupo, también podemos observar que la variable del tiempo  no podrá ser utilizada como una variable independiente o una variable que nos ayude a predecir por sí sola un resultado, pues las muestras fueron tomadas en segmentos ya clasificados por uno tras otro, por lo que no aportan mucho valor al modelo, dando la posibilidad de que nuestro modelo sea erróneo al momento de generar conclusiones (e.g. pudiera concluirse que en la mañana todos conducir normal, en medio día empiezan a conducir agresivamente para terminar el día conduciendo lento) 
+en cambio lo podremos utilizar para comparar cambios bruscos de aceleración y dirección. 
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=1\textwidth]{Fig1}
+    \caption{Comparación de dos imágenes del conjunto que se utilizaran en distintas etapas, la línea roja representando la presa, el recuadro verde marcando el área de descarga y la línea amarilla marcando la orilla.
+}
+\end{figure}
+
+Estos datos ya fueron anteriormente limpiados por nuestros colaboradores en la universidad de Nebraska, removiendo datos faltantes y acoplando los datos de los sensores con sus respectivas fotografías, a su vez se eliminaron las imágenes que no presentaban una vista clara de la presa, impidiendo así la interpretación computacional del nivel y flujo del agua, esto sucedió por las siguientes razones: nieve, hielo o escombros en el sitio, humedad o hielo en el lente de la cámara, nivel de agua elevado, escombros en partes de la presa, imágenes muy oscuras para su correcto procesamiento.
+
+\end{document}
+
+\clearpage

@@ -1,0 +1,10 @@
+\documentclass[../main.tex]{subfiles}
+\begin{document}
+
+\section{Introducción}
+
+Este trabajo se realizó en colaboración con la Universidad de Nebraska Lincoln, buscando una mejora en el uso de sensores convencionales los cuales miden el nivel y descarga de agua en ríos. Esto es debido a su gran costo, complicada instalación, operación y mantenimiento, lo cual ocasiona inconsistencia o desconfianza en los datos. Se busca la posibilidad de resolverlo con la implementación de modelos predictivos mediante el uso de cámaras para la interpretación de imágenes con inteligencia artificial y ciencia de datos. Se busca utilizar imágenes como una fuente por su fácil acceso económico, además de no necesitar mantenimiento extensivo ni experiencia especializada para su instalación como es el caso de sensores utilizados actualmente. El enfoque es resolver la falta e inconsistencia de datos en los sensores mediante errores. Esto se lograría con una coexistencia de ambas fuentes, necesarias para la medición constante del agua en ríos, lo cual funcionaria para estudios en campos de hidrología en la predicciones de desbordes de los cuerpos de agua estudiados, la construcción de puentes o infraestructura cercana, sistemas de agua y reservas dependientes del suplemento que brindan estos cuerpos de agua, los cuales dependen de un flujo constante y completo de datos para una precisión necesaria para tales trabajos. Todo el trabajo que se presenta se basa en el artículo (Chapman et al., 2022) brindado por los miembros de la universidad de Nebraska hacia nosotros, con nuestro objetivo siendo mejorar el trabajo ya hecho con la búsqueda de alternativas o mejores resultados, validando los recursos usados en esta investigación para encontrar un nuevo valor en estos datos como posible área de oportunidad para un mayor eficiencia en futuras iteraciones. La hipótesis principal es que al dividir los datos por temporadas se podrá entrenar los modelos para sus temporadas seleccionadas con mayor precisión.
+
+\end{document}
+
+\clearpage
